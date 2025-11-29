@@ -1,0 +1,65 @@
+name: amc_super_app
+description: AMC Smart City Flutter app for citizens
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.8.0 <4.0.0"
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  mime: ^1.0.4
+  http_parser: ^4.0.2
+
+  # State Management
+  provider: ^6.0.5
+
+  # HTTP requests
+  http: ^1.1.0
+
+  # JSON serialization
+  json_annotation: ^4.8.1
+
+  # Secure storage
+  flutter_secure_storage: ^9.0.0
+
+  # Shared preferences
+  shared_preferences: ^2.5.3
+
+  # Environment variables
+  flutter_dotenv: ^5.0.2
+
+  # Loading indicators
+  flutter_spinkit: ^5.2.0
+
+  path_provider: ^2.0.14
+  cupertino_icons: ^1.0.2
+  image_picker: ^1.2.0
+  geolocator: ^14.0.2
+  intl: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # JSON serialization
+  json_serializable: ^6.7.1
+  build_runner: ^2.4.7
+
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - .env        # Make sure this file exists in the project root
+    # - .env.device  # Uncomment if this file exists
+    - assets/     # Ensure this folder exists
+    - assets/images/  # Ensure this folder exists

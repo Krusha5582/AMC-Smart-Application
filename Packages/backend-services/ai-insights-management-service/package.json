@@ -1,0 +1,31 @@
+{
+  "name": "ai-insights-management-service",
+  "version": "1.0.0",
+  "description": "AI-powered city insights and predictive analytics service",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "seed": "node src/seeders/zoneSeeders.js"
+  },
+  "keywords": [
+    "ai",
+    "insights",
+    "smart-city",
+    "analytics"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "morgan": "^1.10.1",
+    "pg": "^8.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
